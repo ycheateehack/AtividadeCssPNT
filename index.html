@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*Módulo 1*/
+        .legal00{ color:red; }
+        .legal2{ color:blue; }
+        .legal3{ color:green; }
+
+        /*Módulo 2*/
+        .uau{
+            background-color:blue;
+            color:white;
+            font-size:22px;
+        }
+
+        .uau2{
+            background-color: brown;
+            color: yellow;
+            text-align: center;
+            font-size:17px;
+        }
+
+        .uau3{
+            background-color:yellow;
+            color:green;
+            text-align:right;
+            font-size:12px;
+            border:5px solid red;
+        }
+
+        .tomato1{ color: rosybrown; }
+        .tomato2{ color:slateblue; }
+        .tomato3{ color:firebrick; }
+
+        .lindo1{ background-color: red; }
+        .lindo2{ background-color:blue; }
+        .lindo3{ background-color:yellow; }
+
+        .banner{
+            background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn_Riffelsee_2005-06-11.jpg?width=1200");
+            background-size: cover;
+            background-repeat:no-repeat;
+            height:300px;
+        }
+
+        /*Modúlo 3*/
+        .caixa{
+            height:140px;
+            border:3px solid black;
+            font-weight:bold;
+            margin-bottom:10px;
+            background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn_Riffelsee_2005-06-11.jpg?width=1200");
+            background-size:60px;
+            background-color:white;
+        }
+
+        .repeat1{ background-repeat:repeat; }
+        .repeat2{ background-repeat:repeat-x; }
+        .repeat3{ background-repeat:repeat-y; }
+        .repeat4{ background-repeat:no-repeat; }
+
+        .pos{ background-repeat:no-repeat; }
+        .pos1{ background-position:left top; }
+        .pos2{ background-position:center; }
+        .pos3{ background-position:right bottom; }
+
+        .attach{
+            height:200px;
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-shadow:0 0 4px black;
+        }
+
+        .attach1{ background-attachment:scroll; }
+        .attach2{ background-attachment:fixed; }
+
+        
+        .alinha1{ text-align:left; }
+        .alinha2{ text-align:center; }
+        .alinha3{ text-align:right; }
+        .alinha4{ text-align:justify; }
+        .deco1{ text-decoration:underline; }
+        .deco2{ text-decoration:line-through; }
+        .deco3{ text-decoration:overline; }
+        .deco4{ text-decoration:none; }
+        .trans1{ text-transform:uppercase; }
+        .trans2{ text-transform:lowercase; }
+        .trans3{ text-transform:capitalize; }
+        .recuo{ text-indent:50px; }
+
+        
+        .fonte1{ font-family:Arial, sans-serif; }
+        .fonte2{ font-family:"Times New Roman", serif; }
+        .fonte3{ font-family:"Courier New", monospace; }
+        .estilo1{ font-style:normal; }
+        .estilo2{ font-style:italic; }
+        .estilo3{ font-style:oblique; }
+        .tamanho1{ font-size:12px; }
+        .tamanho2{ font-size:20px; }
+        .tamanho3{ font-size:32px; }
+
+        
+        a:link{ color:blue; }
+        a:visited{ color:purple; }
+        a:hover{ color:red; text-decoration:underline; }
+        a:active{ color:green; }
+        .link-botao{
+            background-color:blue;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            display:inline-block;
+        }
+        .link-botao:link, .link-botao:visited{ color:white; }
+        .link-botao:hover{ background-color:red; color:white; }
+
+        
+        .lista1{ list-style-type:disc; }
+        .lista2{ list-style-type:circle; }
+        .lista3{ list-style-type:square; }
+        .lista4{ list-style-type:decimal; }
+        .lista5{ list-style-type:upper-roman; }
+        .lista6{ list-style-type:lower-alpha; }
+        .lista7{ list-style-type:none; }
+        .lista8{ list-style-position:inside; }
+
+        
+        .tabela1{ border:2px solid black; }
+        .tabela1 th, .tabela1 td{ border:1px solid red; }
+        .tabela2{ border:2px solid black; border-collapse:collapse; }
+        .tabela2 th, .tabela2 td{ border:1px solid black; }
+        .tabela3{ width:100%; border-collapse:collapse; }
+        .tabela3 th{ background-color:blue; color:white; height:40px; text-align:left; padding-left:10px; }
+        .tabela3 td{ padding:10px; border-bottom:1px solid gray; text-align:center; }
+        .tabela3 tr:hover{ background-color:yellow; }
+
+        
+        .destaque{ color:white; background-color:purple; }
+        .grande{ font-size:24px; }
+        .borda{ border:3px dashed orange; }
+        p.especial{ font-weight:bold; color:crimson; }
+
+        
+        .menu a{
+            display:inline-block;
+            padding:10px 18px;
+            margin-right:6px;
+            background-color:#eee;
+            color:black;
+            text-decoration:none;
+            border:2px solid black;
+            border-radius:6px;
+            cursor:pointer;
+        }
+        .menu a:hover{ background-color:black; color:white; }
+        .menu a:active{ background-color:green; color:white; }
+
+        /*Modúlo 4*/
+        #titulo-unico{
+            background-color:teal;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+        #caixa-id{
+            width:200px;
+            height:60px;
+            background-color:gold;
+            border:3px solid black;
+        }
+
+        
+        .grupo{
+            border:3px solid navy;
+            background-color:#dbeafe;
+            padding:10px;
+        }
+        .grupo p{ margin:5px 0; }
+        .marca{ background-color:yellow; font-weight:bold; }
+        .vermelho{ color:red; font-style:italic; }
+
+        
+        .modelo{
+            width:250px;
+            height:80px;
+            background-color:lightgreen;
+            border:8px solid darkgreen;
+            padding:20px;
+            margin:30px;
+        }
+        .margem1{ margin:0; background-color:lightblue; border:3px solid blue; width:150px; height:40px; }
+        .margem2{ margin:30px; background-color:lightblue; border:3px solid blue; width:150px; height:40px; }
+        .margem3{ margin:0 0 0 80px; background-color:lightblue; border:3px solid blue; width:150px; height:40px; }
+        .pad1{ padding:0; background-color:lightpink; border:3px solid red; width:200px; }
+        .pad2{ padding:30px; background-color:lightpink; border:3px solid red; width:200px; }
+        .pad3{ padding:5px 40px; background-color:lightpink; border:3px solid red; width:200px; }
+
+        
+        .tam1{ width:100px; height:50px; background-color:orange; }
+        .tam2{ width:300px; height:100px; background-color:orange; }
+        .tam3{ width:50%; height:50px; background-color:orange; }
+
+        
+        .foto{
+            width:100px;
+            height:100px;
+            background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn_Riffelsee_2005-06-11.jpg?width=1200");
+            background-size:cover;
+            border:3px solid black;
+        }
+        .esquerda{ float:left; margin-right:15px; }
+        .direita{ float:right; margin-left:15px; }
+        .limpa{ clear:both; }
+        .bloco-float{ width:120px; height:60px; background-color:salmon; float:left; margin:5px; }
+
+        
+        .pai{
+            position:relative;
+            height:220px;
+            background-color:#e5e7eb;
+            border:3px solid black;
+        }
+        .estatico{ width:120px; height:40px; background-color:lightblue; }
+        .relativo{
+            position:relative;
+            top:15px;
+            left:40px;
+            width:120px;
+            height:40px;
+            background-color:lightgreen;
+        }
+        .absoluto1{
+            position:absolute;
+            top:10px;
+            right:10px;
+            width:120px;
+            height:40px;
+            background-color:tomato;
+        }
+        .absoluto2{
+            position:absolute;
+            bottom:10px;
+            left:10px;
+            width:120px;
+            height:40px;
+            background-color:gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>o que é Css</h1>
+    <h3>Exemplo:</h3>
+    <p class="legal00">oi</p>
+    <p class="legal2">Como vai vc ?</p>
+    <p class="legal3">Você tá bem ?</p>
+
+    <h3>Mais exemplos</h3>
+    <p class="uau">Muito Legal</p>
+    <p class="uau2">Muito emocionante</p>
+    <p class="uau3">Muito Elegante</p>
+
+    <h1>Propriedade Color</h1>
+    <h3>Exemplo:</h3>
+    <p class="tomato1">Óla</p>
+    <p class="tomato2"> Como vai a vida</p>
+    <p class="tomato3">Vai Bem ?</p>
+
+    <h1>Background-Color</h1>
+    <h3>Exemplo:</h3>
+    <p class="lindo1"> Hoje é</p>
+    <p class="lindo2">Um Lindo Dia</p>
+    <p class="lindo3">Para Ter Conhecer</p>
+
+    <h1>Background-Image</h1>
+    <h3>Exemplo:</h3>
+    <div class="banner">
+
+    </div>
+
+    <h1>Background-Repeat</h1>
+    <h3>Exemplo:</h3>
+    <div class="caixa repeat1"></div>
+    <div class="caixa repeat2"></div>
+    <div class="caixa repeat3"></div>
+    <div class="caixa repeat4"></div>
+
+    <h1>Background-Position</h1>
+    <h3>Exemplo:</h3>
+    <div class="caixa pos pos1"></div>
+    <div class="caixa pos pos2"></div>
+    <div class="caixa pos pos3"></div>
+
+    <h1>Background-Attachment</h1>
+    <h3>Exemplo:</h3>
+    <div class="caixa attach attach1"></div>
+    <div class="caixa attach attach2"></div>
+
+
+    <h1>Text-Align</h1>
+    <h3>Exemplo:</h3>
+    <p class="alinha1">Texto</p>
+    <p class="alinha2">Texto</p>
+    <p class="alinha3">Texto</p>
+    <p class="alinha4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <h1>Text-Decoration</h1>
+    <h3>Exemplo:</h3>
+    <p class="deco1">Texto</p>
+    <p class="deco2">Texto</p>
+    <p class="deco3">Texto</p>
+    <a class="deco4" href="#">Link</a>
+
+    <h1>Text-Transform</h1>
+    <h3>Exemplo:</h3>
+    <p class="trans1">Texto</p>
+    <p class="trans2">Texto</p>
+    <p class="trans3">Texto</p>
+
+    <h1>Text-Indent</h1>
+    <h3>Exemplo:</h3>
+    <p class="recuo">Esse texto tem um recuo de 50px na primeira linha. Só a primeira linha do parágrafo é empurrada para a direita, as outras continuam normais, como você pode ver aqui nesta continuação do texto.</p>
+
+    <h1>Font-Family</h1>
+    <h3>Exemplo:</h3>
+    <p class="fonte1">Texto</p>
+    <p class="fonte2">Texto</p>
+    <p class="fonte3">Texto</p>
+
+    <h1>Font-Style</h1>
+    <h3>Exemplo:</h3>
+    <p class="estilo1">Texto</p>
+    <p class="estilo2">Texto</p>
+    <p class="estilo3">Texto</p>
+
+    <h1>Font-Size</h1>
+    <h3>Exemplo:</h3>
+    <p class="tamanho1">Texto</p>
+    <p class="tamanho2">Texto</p>
+    <p class="tamanho3">Texto</p>
+
+    <h1>Links</h1>
+    <h3>Exemplo:</h3>
+    <p><a href="https://www.google.com" target="_blank">Link</a></p>
+    <p><a href="#">Link</a></p>
+    <a class="link-botao" href="#">Link</a>
+
+    <h1>List / Marcadores de Lista</h1>
+    <h3>Exemplo:</h3>
+    <ul class="lista1"><li>Item</li><li>Item</li></ul>
+    <ul class="lista2"><li>Item</li><li>Item</li></ul>
+    <ul class="lista3"><li>Item</li><li>Item</li></ul>
+    <ol class="lista4"><li>Item</li><li>Item</li></ol>
+    <ol class="lista5"><li>Item</li><li>Item</li></ol>
+    <ol class="lista6"><li>Item</li><li>Item</li></ol>
+    <ul class="lista7"><li>Item</li><li>Item</li></ul>
+    <ul class="lista3 lista8"><li>Item</li><li>Item</li></ul>
+
+    <h1>Tabelas / Bordas das Tabelas</h1>
+    <h3>Exemplo:</h3>
+    <table class="tabela1">
+        <tr><th>Nome</th><th>Idade</th></tr>
+        <tr><td>Ana</td><td>20</td></tr>
+        <tr><td>João</td><td>25</td></tr>
+    </table>
+    <h3>Exemplo:</h3>
+    <table class="tabela2">
+        <tr><th>Nome</th><th>Idade</th></tr>
+        <tr><td>Ana</td><td>20</td></tr>
+        <tr><td>João</td><td>25</td></tr>
+    </table>
+
+    <h1>Tabelas / Propriedades das Tabelas</h1>
+    <h3>Exemplo:</h3>
+    <table class="tabela3">
+        <tr><th>Produto</th><th>Preço</th><th>Quantidade</th></tr>
+        <tr><td>Caneta</td><td>R$ 2,00</td><td>10</td></tr>
+        <tr><td>Caderno</td><td>R$ 15,00</td><td>5</td></tr>
+        <tr><td>Mochila</td><td>R$ 80,00</td><td>2</td></tr>
+    </table>
+
+
+    <h1>Class</h1>
+    <h3>Exemplo:</h3>
+    <p class="destaque">Texto</p>
+    <h3 class="destaque">Título</h3>
+    <p class="destaque grande borda">Texto</p>
+    <p class="especial">Texto</p>
+
+    <h1>Propriedades de Link</h1>
+    <h3>Exemplo:</h3>
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <h1>Id</h1>
+    <h3>Exemplo:</h3>
+    <h3 id="titulo-unico">Título</h3>
+    <div id="caixa-id">Texto</div>
+
+    <h1>Div e Span</h1>
+    <h3>Exemplo:</h3>
+    <div class="grupo">
+        <p>Esse texto está dentro de uma <b>div</b> com fundo azul.</p>
+        <p>Aqui uma palavra <span class="marca">destacada</span> e outra <span class="vermelho">em vermelho</span> no meio da frase.</p>
+    </div>
+
+    <h1>Box Model</h1>
+    <h3>Exemplo:</h3>
+    <div class="modelo">Texto</div>
+
+    <h3>Margin</h3>
+    <div class="margem1">Texto</div>
+    <div class="margem2">Texto</div>
+    <div class="margem3">Texto</div>
+
+    <h3>Padding</h3>
+    <div class="pad1">Texto</div>
+    <br>
+    <div class="pad2">Texto</div>
+    <br>
+    <div class="pad3">Texto</div>
+
+    <h1>Width e Height</h1>
+    <h3>Exemplo:</h3>
+    <div class="tam1">Texto</div>
+    <br>
+    <div class="tam2">Texto</div>
+    <br>
+    <div class="tam3">Texto</div>
+
+    <h1>Float e Clear</h1>
+    <h3>Exemplo:</h3>
+    <div class="foto esquerda"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="foto direita"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="limpa"></div>
+
+    <h3>Exemplo:</h3>
+    <div class="bloco-float">Texto</div>
+    <div class="bloco-float">Texto</div>
+    <p class="limpa">Texto</p>
+
+    <h1>Position</h1>
+    <h3>Exemplo:</h3>
+    <div class="pai">
+        <div class="estatico">Texto</div>
+        <div class="relativo">Texto</div>
+        <div class="absoluto1">Texto</div>
+        <div class="absoluto2">Texto</div>
+    </div>
+
+    <div style="height:400px"></div>
+</body>
+</html>
